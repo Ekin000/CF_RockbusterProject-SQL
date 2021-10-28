@@ -1,0 +1,22 @@
+Here is SQL queries with common table expression for film lengths:
+
+Average film length:
+
+	SELECT AVG(length)								
+	FROM film		
+  
+Titles of the longest films (Length=185):
+
+	SELECT film_id,								
+	title,								
+	length								
+	FROM film								
+	ORDER BY length DESC
+  
+Titles of the shortest films (Length=46):
+
+	SELECT film_id,								
+	title,								
+	length								
+	FROM film								
+	ORDER BY length ASC								
