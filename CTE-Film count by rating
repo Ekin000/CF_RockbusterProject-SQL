@@ -1,0 +1,8 @@
+Here is a SQL query with common table expression for film counts by rating:
+
+Film count by rating:
+
+	SELECT rating								
+	COUNT (film_id)								
+	FROM film								
+	GROUP BY rating								
