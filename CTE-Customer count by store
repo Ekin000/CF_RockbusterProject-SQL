@@ -1,0 +1,8 @@
+Here is a SQL query with common table expression for customer counts by store:
+
+Customer count of the stores:
+
+	SELECT store_id,								
+	COUNT (customer_id)								
+	FROM customer								
+	GROUP BY store_id								
