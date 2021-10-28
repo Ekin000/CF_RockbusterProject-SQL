@@ -1,0 +1,28 @@
+Here is SQL queries with common table expression for rental duration of films:
+
+Maximum rental duration:
+
+	SELECT MAX (rental_duration)					
+	fROM film					
+  
+Count of the films which have maximum rental duration:	
+
+	SELECT COUNT (film_id)					
+	FROM film					
+	WHERE rental_duration = 7	
+  
+Minimum rental duration:
+
+	SELECT MIN (rental_duration)					
+	FROM film			
+  
+Count of the films which have minimum rental duration:
+
+	SELECT COUNT (film_id)					
+	FROM film					
+	WHERE rental_duration = 3	
+  
+Average rental duration:	
+
+	SELECT AVG(rental_duration)						
+	FROM film								
