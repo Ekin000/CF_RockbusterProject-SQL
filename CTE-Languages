@@ -1,0 +1,6 @@
+Here is a SQL query with common table expression for languages of films:
+
+	SELECT DISTINCT A.language_id,					
+	B.name					
+	FROM film A					
+	INNER JOIN language B ON A.language_id=B.language_id					
