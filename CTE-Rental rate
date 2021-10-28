@@ -1,0 +1,18 @@
+Here is SQL queries with common table expression for rental rates of films:
+
+Maximum rental rate:
+
+	SELECT MAX (rental_rate) 						
+	FROM film	
+  
+Minimum rental rate:
+
+	SELECT MIN(rental_rate)								
+	FROM film		
+  
+Film count by rental rate:
+
+	SELECT rental_rate								
+	COUNT(film_id)								
+	FROM film								
+	GROUP BY rental_rate								
