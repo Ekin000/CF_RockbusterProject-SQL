@@ -1,0 +1,16 @@
+Here is SQL queries with common table expression for replacement cost:
+
+Maximum replacement cost:
+
+	SELECT MAX (replacement_cost)								
+	FROM film	
+  
+Minimum replacement cost:
+
+	SELECT MIN(replacement_cost)								
+	FROM film	
+  
+Average replacement cost:
+
+	SELECT AVG(replacement_cost)								
+	FROM film								
