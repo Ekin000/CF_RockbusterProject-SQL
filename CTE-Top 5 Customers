@@ -1,0 +1,22 @@
+Here is a SQL query with common table expression for top 5 customers:
+
+Top 5 customers in the top 10 cities who have paid the highest total amounts to Rockbuster:
+
+	SELECT A.customer_id								
+	A.first_name								
+	A.last_name								
+	SUM (P.amount) AS total_paid								
+	G.city								
+	K.country								
+	FROM customer A								
+	INNER JOIN payment P ON A.customer_id=P.customer_id								
+	INNER JOIN address C ON A.address_id=C.address_id								
+	INNER JOIN city G ON C.city_id=G.city_id								
+	INNER JOIN country K ON G.country_id=K.country_id								
+	WHERE city IN ('Aurora', 'Tokat', 'Tarsus', 'Atlixco',								
+	Emeishan', 'Pontianak', 'Shimoga',								
+	Aparecida de Goinia', 'Zalantun',								
+	Taguig')								
+	GROUP BY A.customer_id, G.city, K.country								
+	ORDER BY total_paid DESC								
+	LIMIT 5				
